@@ -11,6 +11,6 @@ class Game:
         self.size = size
         self.max_players = max_players
 
-    def send_all(self,message):
+    def send_all(self, message):
         for p in self.players:
             p.send(message)
