@@ -24,7 +24,7 @@ class myRequestHandler(socketserver.StreamRequestHandler):
     def handle(self):
         logging.debug('New Client: %s', self.client_address)
         p = Player(self)
-        p.serve_commands()
+        p.sere()
 
 
 if __name__ == '__main__':
