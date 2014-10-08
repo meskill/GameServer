@@ -22,7 +22,6 @@ class myRequestHandler(socketserver.StreamRequestHandler):
         print(n, m, l, t, tl, h, w, ot)
 
     def handle(self):
-        logging.debug('New Client: %s', self.client_address)
         p = Player(self.rfile, self.wfile, self.client_address)
         p.serve()
 
